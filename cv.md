@@ -42,6 +42,7 @@ About myself:
 - Figma
 - ES6
 - English B1
+- Gulp
 
 ---
 
