@@ -207,3 +207,21 @@ body {
 .right-contaiter__about {
   margin-bottom: 10px;
 }
+
+/* ------- Contacts ------- */
+.contacts {
+  padding: 35px 0px;
+}
+
+.contacts__title {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
