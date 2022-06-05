@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "carolin", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+  font: "inherit";
+}
+
+@font-face {
+  font-family: "carolin";
+  src: url("../assets/fonts/carolin-light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/carolin-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "carolin";
+  src: url("../assets/fonts/carolin-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/carolin-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "carolin";
+  src: url("../assets/fonts/carolin-thin-webfont.woff2") format("woff2"),
+    url("../assets/fonts/carolin-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+body {
+  background-color: black;
+}
+
+/* ------- HEADER ------- */
+.header {
+  padding: 35px 0px;
+}
+
+.header__container {
+  padding-bottom: 20px;
+  border-bottom: 2px solid yellow;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list__item {
+  border-bottom: 1px solid transparent;
+  transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.nav-list__item:hover {
+  border-bottom: 1px solid yellow;
+  color: yellow;
+}
+
+.nav-list__item:active {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.nav-list__item:focus {
+  border-bottom: 1px solid red;
+  color: red;
+}
+.nav-list__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+/* ------- Main ------- */
+.section__main {
+  padding: 35px 0px;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main__container {
+  padding-bottom: 20px;
+  border-bottom: 2px solid yellow;
+}
+
+.letf-container {
+  align-items: center;
+  text-align: center;
+}
+
+.left-container__img {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.9);
+  margin-bottom: 25px;
+}
+
+.letf-container__container-logo {
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  height: 500px;
+  width: 500px;
+  transition: border 0.5s ease-in-outs;
+  position: relative;
+  z-index: -2;
+}
+
+.right-contaiter__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.right-contaiter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+}
+.right-contaiter__about {
+  margin-bottom: 10px;
+}
+
+/* ------- Contacts ------- */
+.contacts {
+  padding: 35px 0px;
+}
+
+.contacts__title {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.list-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
