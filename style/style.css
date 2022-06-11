@@ -48,7 +48,6 @@ body {
   font-family: "carolin", sans-serif;
   font-weight: normal;
   font-size: 40px;
-  color: black;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -122,7 +121,8 @@ body {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
   position: relative;
@@ -244,10 +244,8 @@ body {
 .main__container {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
   justify-content: space-around;
-}
-.main__container {
-  padding-bottom: 20px;
 }
 
 .letf-container {
@@ -360,12 +358,206 @@ body {
 .contacts__title {
   align-items: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .list-contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.list-contacts__link {
+  display: block;
+  position: relative;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.telegram {
+  background-image: url(../assets/img/telegram2.svg);
+}
+
+.watsup {
+  background-image: url(../assets/img/whatsapp2.svg);
+}
+
+.phone {
+  background-image: url(../assets/img/phone2.svg);
+}
+
+.telegram:hover {
+  content: "";
+  background-image: url(../assets/img/telegram.svg);
+}
+
+.watsup:hover {
+  content: "";
+  background-image: url(../assets/img/whatsapp.svg);
+}
+
+.phone:hover {
+  content: "";
+  background-image: url(../assets/img/phone.svg);
+}
+
+/* ------- Education ------- */
+
+.education {
+  padding: 35px 0px;
+}
+
+.education__сontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+/* ------- Skills ------- */
+
+.skills {
+  padding: 35px 0px;
+}
+
+.skills__title {
+  margin-bottom: 30px;
+}
+
+.skills__box {
+  margin-bottom: 30px;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__container-info {
+  align-items: center;
+  text-align: center;
+}
+
+.hard__list,
+.soft__list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hard-skills {
+  margin-bottom: 50px;
+}
+
+.hard__list-item,
+.soft__list-item {
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hard__list-item:nth-child(3n) {
+  margin-right: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+}
+
+.html {
+  background-image: url(../assets/img/htmllogo.png);
+}
+
+.css {
+  background-image: url(../assets/img/cssLogo.png);
+}
+
+.javascript {
+  background-image: url(../assets/img/JsLogo.png);
+}
+
+.github {
+  background-image: url(../assets/img/gitLogo.png);
+}
+
+.figma {
+  background-image: url(../assets/img/figmaLogo.png);
+}
+
+.gulp {
+  background-image: url(../assets/img/gulpLogo.png);
+}
+
+.hard {
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff0000;
+}
+
+.soft {
+  color: white;
+  text-shadow: 0px 0px 5px #f16a6a, 0px 0px 10px #f16a6a, 0px 0px 10px #f16a6a, 0px 0px 20px #f16a6a;
+}
+
+.communication {
+  background-image: url(../assets/img/commun.png);
+}
+
+.critical {
+  background-image: url(../assets/img/criticalth.png);
+}
+
+.manager {
+  background-image: url(../assets/img/manage.png);
+}
+
+/* ------- Footer ------- */
+.footer {
+  padding: 35px 0px;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer__list-link {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.rs {
+  background-image: url(../assets/img/rs_school.svg);
+}
+
+.git {
+  background-image: url(../assets/img/git.svg);
+}
+.rs:hover {
+  background-image: url(../assets/img/rs_school2.svg);
+}
+.git:hover {
+  background-image: url(../assets/img/git2.svg);
 }
