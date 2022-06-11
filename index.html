@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" href="assets/img/favicon.ico" />
+    <script src="index.js" defer></script>
     <title>CV</title>
   </head>
   <body>
@@ -13,6 +14,9 @@
       <div class="container header__container">
         <nav class="nav header__nav">
           <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#contacts" class="nav-link" data-text="Contacts">Contacts</a>
+            </li>
             <li class="nav-list__item">
               <a href="#code" class="nav-link" data-text="Code">Code</a>
             </li>
@@ -24,9 +28,6 @@
             </li>
             <li class="nav-list__item">
               <a href="#education" class="nav-link" data-text="Education">Education</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#contacts" class="nav-link" data-text="Contacts">Contacts</a>
             </li>
             <li class="nav-list__item">
               <a href="#about" class="nav-link" data-text="About">About</a>
@@ -121,7 +122,7 @@
                     <div class="card"></div>
                   </li>
                   <li class="soft__list-item manager">
-                    Project manager
+                    Project managers
                     <div class="card"></div>
                   </li>
                 </ul>
@@ -134,7 +135,36 @@
         </div>
       </section>
 
-      <section class="code">
+      <section id="projects" class="projects">
+        <div class="container">
+          <div>
+            <h2 class="contacts__title">PROJECTS:</h2>
+          </div>
+          <div class="projects__container">
+            <div class="projects-items">
+              <div class="project-one"></div>
+              <a
+                target="_blank"
+                class="project__link1"
+                href="https://raz3r444uk.github.io/ToDoList/"
+              >
+                <span>TETRIS</span>
+              </a>
+            </div>
+            <div class="projects-items">
+              <div class="project-two"></div>
+              <a target="_blank" class="project__link2" href="https://raz3r444uk.github.io/Tetris/">
+                <span>TODOLIST</span>
+              </a>
+            </div>
+          </div>
+          <div class="line">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="code" class="code">
         <div class="container">
           <div class="code__container">
             <div>
@@ -203,6 +233,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="foter__container">
