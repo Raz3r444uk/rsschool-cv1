@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: url(../assets/img/curs.png), pointer;
 }
 
 /* Указываем box sizing */
