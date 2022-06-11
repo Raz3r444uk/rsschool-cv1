@@ -402,6 +402,7 @@ body {
 }
 
 .watsup:hover {
+  color: #575252;
   content: "";
   background-image: url(../assets/img/whatsapp.svg);
 }
@@ -470,6 +471,12 @@ body {
   background-position: center;
   border-radius: 20px;
   margin-bottom: 20px;
+  transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.hard__list-item:hover,
+.soft__list-item:hover {
+  box-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff0000;
 }
 
 .hard__list-item:nth-child(3n) {
@@ -527,6 +534,93 @@ body {
 
 .manager {
   background-image: url(../assets/img/manage.png);
+}
+
+/* ------- Projects ------- */
+
+.projects {
+  padding: 35px 0px;
+}
+
+.projects__container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.project-one {
+  width: 400px;
+  height: 400px;
+  background: url(../assets/img/tetris.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  filter: blur(5px);
+  margin-bottom: 10px;
+  transition: filter 0.5s ease-in-out;
+}
+
+.project-two {
+  width: 400px;
+  height: 400px;
+  background: url(../assets/img/todo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: filter 0.5s ease-in-out;
+}
+
+.project-one:hover,
+.project-two:hover {
+  filter: blur(0px);
+}
+
+.project__link1,
+.project__link2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  background: #ffc7c7;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.project__link1 span,
+.project__link2 span {
+  position: relative;
+  z-index: 1;
+}
+
+.project__link1::before,
+.project__link2::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 0;
+  height: 0;
+  background: red;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%);
+}
+
+.project__link1:hover::before,
+.project__link2:hover::before {
+  width: 100px;
+  height: 100px;
 }
 
 /* ------- Code ------- */
@@ -600,6 +694,7 @@ body {
 }
 
 /* ------- Footer ------- */
+
 .footer {
   padding: 35px 0px;
 }
@@ -611,6 +706,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.footer__list-item {
+  font-size: 30px;
 }
 
 .footer__list-link {
