@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: url(../assets/img/curs.png), pointer;
 }
 
 /* Указываем box sizing */
@@ -419,10 +420,93 @@ body {
 }
 
 .education__сontainer {
+  margin-bottom: 20px;
+}
+
+.education-list {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.education-list__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+  border-top: 2px solid rgb(255, 86, 86);
+  border-left: 2px solid rgb(255, 176, 176);
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.content__title {
+  margin-bottom: 30px;
+  color: red;
+}
+
+.edu__link1,
+.edu__link2,
+.edu__link3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  background: #ffc7c7;
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.edu__link1 span,
+.edu__link2 span,
+.edu__link3 span {
+  position: relative;
+  z-index: 1;
+}
+
+.edu__link1::before,
+.edu__link2::before,
+.edu__link3::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 0;
+  height: 0;
+  background: red;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%);
+}
+
+.edu__link1:hover::before,
+.edu__link2:hover::before,
+.edu__link3:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.content__description {
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /* ------- Skills ------- */
