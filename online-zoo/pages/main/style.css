@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #4b9200;
+  --orang: #f9804b;
+  --Yellow: #ffee2e;
+  --Orange_grad: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  --Pink_gradient: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  --Rad: #d31414;
+  --blackBlue: #333b41;
+  --Gray: #767474;
+  --Gray_smoky: #ababab;
+  --Light_gray: #f1f3f2;
+  --Frosted_glass_white: #fdfdff;
+}
+
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
+  background: #e5e5e5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+  font: "inherit";
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-thin-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-light-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-medium-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-bold-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/fonts/roboto-black-webfont.woff2") format("woff2"),
+    url("../../assets/fonts/roboto-black-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
